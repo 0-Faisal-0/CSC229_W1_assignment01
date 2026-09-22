@@ -1,29 +1,54 @@
 package org.example;
 
-/*
-* ToDo 01:
- Complete the followings:
+// This class represents a course
+public class Course {
 
-The Course class should have:
+    // Data members
+    private int id;
+    private String name;
+    private String code;
 
-    - ID
+    // Default constructor
+    public Course() {
+        id = 0;
+        name = "";
+        code = "";
+    }
 
-    - Name
+    // Overloaded constructor
+    public Course(int id, String name, String code) {
+        this.id = id;
+        this.name = name;
+        this.code = code;
+    }
 
-    - Code
+    // Setter for id
+    public void setId(int id) {
+        this.id = id;
+    }
 
- - You need to have setters and getters for all data members
- - You must have a default constructor and an overloaded one that accepts 3 parameters to update the member variables.
+    // Getter for id
+    public int getId() {
+        return id;
+    }
 
- - Using a driver class (with main), instantiate the Course class and call its methods to change the id, name, and code.
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
 
- - Test and run your code.
+    // Getter for name
+    public String getName() {
+        return name;
+    }
 
- - Add comments to explain your program.
+    // Setter for code
+    public void setCode(String code) {
+        this.code = code;
+    }
 
- - Push the code to GitHub.
-
- - Submit the Github link here (make sure it is a public repo).
-
- */
-
+    // Getter for code
+    public String getCode() {
+        return code;
+    }
+}
